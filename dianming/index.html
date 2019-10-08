@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>点名系统</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<div id="roll_call">
+    <div class="call_tittle">点名系统</div>
+    <div class="col-md-8 call_main">
+        <div class="row">
+            <div class="left_down">
+                <div class="row" v-for="i in long">
+                    <a href="#" class="col-md-1" v-for="j in hori" :id="getID(j,i)">
+                        <img class="img" src="img/not_ok.png" alt="">
+                        <p :stu_id="0">(空座位)</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div id="dm_time">
+            <div id="time_Show"></div>
+            <div id="day_Show"></div>
+        </div>
+        <div id="dm_zrs">
+                <div class="col-md-3">总人数：</div>
+                <div class="col-md-9" id="all"></div>
+        </div>
+        <div id="dm_yd">
+            <div class="col-md-3">已到人数：</div>
+            <div class="col-md-9" id="dao"></div>
+        </div>
+        <div id="dm_qq">
+            <div class="col-md-3">缺勤人数：</div>
+            <div class="col-md-9" id="que"></div>
+        </div>
+        
+    </div>
+</div>
+</html>
