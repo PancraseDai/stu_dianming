@@ -17,9 +17,15 @@
     <div class="col-md-8 call_main">
         <div class="row">
             <div class="left_down">
+                <div class="row">
+                    <div class="blackboard">
+                        <div class="whiteFont">教师讲台</div>
+                    </div>
+                </div>
+
                 <div class="row" v-for="i in long">
-                    <a href="#" class="col-md-1" v-for="j in hori" :id="getID(j,i)">
-                        <img class="img" src="img/not_ok.png" alt="">
+                    <a href="#" class="people" v-for="j in hori" :id="getID(j,i)">
+                        <img class="img" src="img/is_ok.png" alt="">
                         <p :stu_id="0">(空座位)</p>
                     </a>
                 </div>
@@ -33,18 +39,29 @@
             <div id="day_Show"></div>
         </div>
         <div id="dm_zrs">
-                <div class="col-md-3">总人数：</div>
-                <div class="col-md-9" id="all"></div>
+                <div class="col-md-5">总人数：</div>
+                <div class="col-md-7" id="all"></div>
         </div>
         <div id="dm_yd">
-            <div class="col-md-3">已到人数：</div>
-            <div class="col-md-9" id="dao"></div>
+            <div class="col-md-5">已到人数：</div>
+            <div class="col-md-7" id="dao"></div>
         </div>
         <div id="dm_qq">
-            <div class="col-md-3">缺勤人数：</div>
-            <div class="col-md-9" id="que"></div>
+            <div class="col-md-5">缺勤人数：</div>
+            <div class="col-md-7" id="que"></div>
         </div>
-        
+        <div id="dm_select">
+            <span style="font-size: 20px;font-weight: 600;">班级：</span>
+            <select name="" id="val_select">
+                <option value="">无</option>
+                <option value="one">一班</option>
+                <option value="two">二班</option>
+                <option value="three">三班</option>
+                <option value="four">四班</option>
+                <option value="five">五班</option>
+                <option value="six">六班</option>
+            </select>
+        </div>
     </div>
 </div>
 </html>
