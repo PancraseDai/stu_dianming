@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#roll_call{
+    width: 100%;
+    height: 1000px;
+    border: 1px solid #1d9ce5;
+    border-radius: 5px;
+}
+#roll_call .call_tittle{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+#roll_call .call_main{
+    height: 920px;
+    border-right: 1px solid #1d9ce5;
+    padding-top: 15px;
+}
+#roll_call .call_main .left_down{
+    padding: 5px;
+    text-align: center;
+}
+
+#roll_call .call_main .left_down .blackboard{
+    height: 80px;
+    width: 15%;
+    left: 42.5%;
+    position: absolute;
+    background: rgba(47,164,231);
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding-top: 20px;
+}
+#roll_call .call_main .left_down .row{
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+#roll_call .call_main .left_down .row a{
+    text-decoration: none;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+}
+#roll_call .call_main .left_down .row .people{
+    height: 100%;
+    width: 12%;
+}
+#roll_call .call_main .left_down .row a img{
+    width: 35%;
+    height: 70%;
+}
+#dm_time{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#dm_time #time_Show,
+#dm_time #day_Show{
+    width: 100%;
+    height: 50%;
+    padding-top:40px;
+    font-weight: 600;
+    text-align: center;
+}
+#dm_time #day_Show{
+    top: 50%;
+    font-size: 30px;
+    padding-bottom: 40px
+}
+#dm_time #time_Show{
+    font-size: 80px;
+}
+#dm_zrs{
+    margin-top: 30px;
+    height: 30px;
+}
+#dm_yd{
+    margin-top: 30px;
+    height: 30px;
+    }
+#dm_qq{
+    margin-top: 30px;
+    height: 30px;
+}
+#zy_select,
+#kc_select,
+#bj_select,
+#ls_select{
+    text-align: center;
+}
+#zy_select select{
+    margin-top: 60px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid ;
+}
+#bj_select select,
+#kc_select select,
+#ls_select select{
+    margin-top: 30px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid ;
+}
+#dm_zrs .col-md-5,
+#dm_yd .col-md-5,
+#dm_qq .col-md-5{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+#dm_zrs .col-md-7,
+#dm_yd .col-md-7,
+#dm_qq .col-md-7{
+    font-size: 25px;
+    font-weight: 600;
+}
